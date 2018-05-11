@@ -1,0 +1,29 @@
+## One variable per row, comments start with #
+## Empty rows ignored. Rows with numbers and without descriptions are placeholders for future variables.
+## Arguments not provided should be replaced with '*'.
+## Values in parentheses are the indices in the vector where value is stored.
+
+
+######################## General settings ########################
+batchname	#(0) Batch name, used as prefix for output files. Only letters, numbers and underscore.
+landscape.txt	#(1) Name of file containing nodes.
+365	#(2) Max time steps to run before exiting.
+1	#(3) Number of replicates to run.
+1	#(4) Optimization method (1 = pairwise comparison, 2 = Keeling's, 3 = Binomial, 4 = Cell-Cell Binomial)
+1	#(5) Local spread distance kernel (1 = Buhnerkempe, 2 = gaussian, 3 = Buhnerkempe half gamma, 4 = Buhnerkempe double gamma, 5 = Brand a3, 6 = a4, 7 = a5, 8 = Hayama, 9 = USDOSv2)
+1	#(6) Lookup table for kernel (0 = off, 1 = on)
+2	#(7) Cell creation method (1 = fixed, 2 = dynamic)
+100	#(8) Number of cells along one dimension of the grid (total number will be this^2). Ignored if (7) = 2.
+100	#(9) Max number of nodes in one cell when using dynamic cell size. Ignored if (7) = 1.
+4	#(10) Incubation time. Delay between exposure and infectiousness.
+5	#(11) Detection time. Delay between infectiousness and detection.
+1	#(12) Removal time. Delay between detected and removed (immune, vaccinated, culled)
+1	#(13) Seed method. 1 = random, 2 = from file (one id per row, will seed all the node ids given in the file each replicate.), 3 = single specific node id, 4 = one random node per group, will set n_replicates to n_groups and option (3) will be ignored.
+1	#(14) Number of nodes to seed each replicate if (13) = 1; or if (13) = 3, seed this specific node every replicate; ignored if (13) = 4.
+seed_file.txt	#(15) Node ids to seed. One id/row, number of lines must be == number of replicates. Ignored if (13) = 1.
+10,100,1000,10000	#(16) Output levels. Gridsim will output replicate results when the cumulative number of infected reaches these levels. Will also exit after the last output.
+0	#(17) Plot the grid (slow, dont use unless of specific interest, requires python).
+1.0, 1.0	#(18) SUSCEPTIBILITY scale parameters for species 1 & 2.
+0.1, 0.1	#(19) INFECTIOUSNESS (TRANSMISSIBILITY) scale parameters for sp 1 & 2.
+1.0, 1.0	#(20) SUSCEPTIBILITY exponents for species 1 & 2.
+0.1, 0.1	#(21) INFECTIOUSNESS (TRANSMISSIBILITY) exponents for sp 1 & 2.
