@@ -3,9 +3,9 @@ gridsim
 
 Fork of `gridsim` code from the publication of Sellman and Tsao et al. (2018).  
 
-Sellman S, Tsao K, Tildesley MJ, Brommesson P, Webb CT, Wennergren U, et al. (2018) **Need for speed: An optimized gridding approach for spatially explicit disease simulations.** *PLoS Comput Biol* 14(4): e1006086. https://doi.org/10.1371/journal.pcbi.1006086
 
-Original `readme.txt`:
+Original `readme.txt`
+---------------------
 
 > This is gridsim, a small kernel based spatially explicit livestock disease
 > simulation. Gridsim is primarily intended to be a reference to the methods
@@ -25,3 +25,16 @@ Original `readme.txt`:
 > not necessary and every node can belong to the same group.
 
 
+Running
+------
+
+```bash
+cd gridsim
+make
+```
+
+
+Reference
+---------
+
+Sellman S, Tsao K, Tildesley MJ, Brommesson P, Webb CT, Wennergren U, et al. (2018) Need for speed: An optimized gridding approach for spatially explicit disease simulations. PLoS Comput Biol 14(4): e1006086. https://doi.org/10.1371/journal.pcbi.1006086
