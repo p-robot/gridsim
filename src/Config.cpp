@@ -29,9 +29,9 @@ Config::Config(std::string config_file)
 		}
 	}
 
-    if(parameter_vector.size() != 23)
+    if(parameter_vector.size() != 22)
     {
-        std::cout << "Error in config file. Should be 23 parameters, found "
+        std::cout << "Error in config file. Should be 22 parameters, found "
                   << parameter_vector.size() << std::endl;
         exit(EXIT_FAILURE);
     }
