@@ -5,11 +5,11 @@
 
 
 ######################## General settings ########################
-batchname	#(0) Batch name, used as prefix for output files. Only letters, numbers and underscore.
-landscape.txt	#(1) Name of file containing nodes.
+testrun	#(0) Batch name, used as prefix for output files. Only letters, numbers and underscore.
+medium_clustering_random_landscape.txt	#(1) Name of file containing nodes.
 365	#(2) Max time steps to run before exiting.
-1	#(3) Number of replicates to run.
-1	#(4) Optimization method (1 = pairwise comparison, 2 = Keeling's, 3 = Binomial, 4 = Cell-Cell Binomial)
+100	#(3) Number of replicates to run.
+3	#(4) Optimization method (1 = pairwise comparison, 2 = Keeling's, 3 = Binomial, 4 = Cell-Cell Binomial)
 1	#(5) Local spread distance kernel (1 = Buhnerkempe, 2 = gaussian, 3 = Buhnerkempe half gamma, 4 = Buhnerkempe double gamma, 5 = Brand a3, 6 = a4, 7 = a5, 8 = Hayama, 9 = USDOSv2)
 1	#(6) Lookup table for kernel (0 = off, 1 = on)
 2	#(7) Cell creation method (1 = fixed, 2 = dynamic)
