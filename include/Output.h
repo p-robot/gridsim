@@ -39,7 +39,7 @@ namespace output
         if(res_f.is_open())
         {
             res_f << "Rep\tSeededGroups\t";
-            for(int i=0; i<groups.size()-2; i++)
+            for(int i=0; i<groups.size()-1; i++)
             {
                 res_f << groups.at(i) << "\t";
             }
