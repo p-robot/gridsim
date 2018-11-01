@@ -140,7 +140,7 @@ int main(int argc, char* argv[])
 //        output::do_inf_coordinates_output(inf_fn, G);
 
         std::unordered_map<unsigned int, std::vector<Node*>> group_infections = G.get_inf_nodes_by_group();
-        output::do_group_output(group_out_fn, rep_i, group_infections, groups, seeded_nodes);
+        //output::do_group_output(group_out_fn, rep_i, group_infections, groups, seeded_nodes);
 
         //Output the stream of number of cases in each class to file.
 //        std::string incidence_fn = C.batch_name + "_incidence_" + std::to_string(rep_i) + ".txt";
