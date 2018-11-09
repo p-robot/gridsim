@@ -29,8 +29,16 @@ Running
 ------
 
 ```bash
+# Clone the repo and make the required folder
+git clone https://github.com/p-robot/gridsim
 cd gridsim
+mkdir obj
+
+# Compile
 make
+
+# Run the code using the example setup
+./gridsim example_config.txt
 ```
 
 
